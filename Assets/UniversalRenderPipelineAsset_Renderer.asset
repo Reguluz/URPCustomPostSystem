@@ -20,13 +20,13 @@ MonoBehaviour:
       m_Bits: 4294967295
     blitMaterial: {fileID: 2100000, guid: a042c37e21de80d4987cfc86ea0aeded, type: 2}
   settings:
-    ScreenAspect: 1
-    IDMask: 0
-    OverlayEnable: 0
-    PolarUV: 0
-    NormalStr: 0
+    ScreenAspect: 1.6667
+    IDMask: 1
+    OverlayEnable: 1
+    PolarUV: 1
+    NormalStr: 0.38
     GradientOffset: 0
-    OverlayCoordiate: {x: 1, y: 1, z: 0, w: 0}
+    OverlayCoordiate: {x: 1, y: 5, z: -1, w: 0.1}
     NormalCoordiate: {x: 1, y: 1, z: 0, w: 0}
     EyeMaskEnable: 0
     Handle: 0.5
@@ -36,7 +36,7 @@ MonoBehaviour:
     RadialBlurMaskStr: 1
     RadialBlurSampleTime: 3
     RadialBlurOffsetStr: 0.1
-    DualKawaseDOFEnable: 1
+    DualKawaseDOFEnable: 0
     BlurRadius: 2.76
     Iteration: 2
     RTDownScaling: 0

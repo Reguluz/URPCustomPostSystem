@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: UberPost
   m_Shader: {fileID: 4800000, guid: fffc74bc14aaf3845ad524e0ec3069b1, type: 3}
-  m_ShaderKeywords: _X_ON
+  m_ShaderKeywords: USE_ID_TEXTURE USE_POLARUV _X_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -36,7 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
-        m_Texture: {fileID: 2800000, guid: a41bb0b24048490449a8ae09d3dca7b9, type: 3}
+        m_Texture: {fileID: 2800000, guid: fb8acdfe8d42b054390a6ae112c3ce32, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: -5, y: 0}
     - _RadialBlurMask:
@@ -72,9 +72,9 @@ Material:
     - _GradingOffset: 0
     - _Handle: 0.5
     - _HorizontalShake: 0.1
-    - _IDTexture: 0
+    - _IDTexture: 1
     - _Lighten: 0.01
-    - _NormalStr: 0
+    - _NormalStr: 0.38
     - _Offset: 2.76
     - _PolarUV: 0
     - _PostCustomSaturate: 0.318
@@ -86,7 +86,7 @@ Material:
     - _RainDropSize: 5.26
     - _RainForce: 1
     - _ScanLineJitter: 0.25
-    - _ScreenAspect: 1
+    - _ScreenAspect: 1.6667
     - _ShiftSpeed: 1
     - _TimeScale: 14.1
     - _VerticalJump: 1
