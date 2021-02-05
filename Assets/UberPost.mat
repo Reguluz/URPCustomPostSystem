@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UberPost
+  m_Shader: {fileID: 4800000, guid: fffc74bc14aaf3845ad524e0ec3069b1, type: 3}
+  m_ShaderKeywords: _X_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AnalogNoise:
+        m_Texture: {fileID: 2800000, guid: 5a6595bb68566014abfbcd58cb6dcbcf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GradientTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 5a6595bb68566014abfbcd58cb6dcbcf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTex:
+        m_Texture: {fileID: 2800000, guid: a41bb0b24048490449a8ae09d3dca7b9, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: -5, y: 0}
+    - _RadialBlurMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Rain:
+        m_Texture: {fileID: 2800000, guid: c9c4c9b39e6a40f49b796462e34d875d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RainDropTex:
+        m_Texture: {fileID: 2800000, guid: 7cddf2fbe858098498972068031e5fdf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Ripple:
+        m_Texture: {fileID: 2800000, guid: 53123e64092b50844ab75b22e24876f2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SideTex:
+        m_Texture: {fileID: 2800000, guid: 7cddf2fbe858098498972068031e5fdf, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: -5, y: 0}
+    m_Floats:
+    - _Balance: 0.5
+    - _Blur: 0.5
+    - _DOFRadius: 25
+    - _Distortion: 1
+    - _DropAspect: 2
+    - _DropMotionTurb: 1
+    - _DropSpeed: 0.96
+    - _FocusLength: 50
+    - _Gradient: 0.5
+    - _GradingOffset: 0
+    - _Handle: 0.5
+    - _HorizontalShake: 0.1
+    - _IDTexture: 0
+    - _Lighten: 0.01
+    - _NormalStr: 0
+    - _Offset: 2.76
+    - _PolarUV: 0
+    - _PostCustomSaturate: 0.318
+    - _RGBShiftAmp: 0
+    - _RadialBlurMaskStr: 1
+    - _RadialBlurOffsetStr: 0.1
+    - _RadialBlurSampleTime: 3
+    - _RainDropAngle: 29
+    - _RainDropSize: 5.26
+    - _RainForce: 1
+    - _ScanLineJitter: 0.25
+    - _ScreenAspect: 1
+    - _ShiftSpeed: 1
+    - _TimeScale: 14.1
+    - _VerticalJump: 1
+    - _VignetteIntensity: 0.262
+    - _VignetteSmoothness: 1
+    - _X: 1
+    - _Y: 0
+    m_Colors:
+    - _Color1: {r: 1, g: 0, b: 0, a: 1}
+    - _Color2: {r: 0, g: 1, b: 0, a: 1}
+    - _Color3: {r: 0, g: 0, b: 1, a: 1}
+    - _ManualShift: {r: 0.2, g: -0.2, b: 0.5, a: 0.01}
+    - _RadialBlurCenter: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _VignetteCenter: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _VignetteColor: {r: 0, g: 0, b: 0, a: 0}
