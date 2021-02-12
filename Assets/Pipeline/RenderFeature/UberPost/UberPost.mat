@@ -66,39 +66,39 @@ Material:
     - _Distortion: 1
     - _DropAspect: 2
     - _DropMotionTurb: 1
-    - _DropSpeed: 0.96
+    - _DropSpeed: 0.2
     - _FocusLength: 50
     - _Gradient: 0.5
     - _GradingOffset: 0
     - _Handle: 0.5
     - _HorizontalShake: 0.1
     - _IDTexture: 1
-    - _Lighten: 0.01
+    - _Lighten: 1
     - _NormalStr: 0.38
     - _Offset: 2.76
     - _PolarUV: 0
-    - _PostCustomSaturate: 0
+    - _PostCustomSaturate: 1
     - _RGBShiftAmp: 0
     - _RadialBlurMaskStr: 1
     - _RadialBlurOffsetStr: 0.1
     - _RadialBlurSampleTime: 3
-    - _RainDropAngle: 29
-    - _RainDropSize: 5.26
+    - _RainDropAngle: 0
+    - _RainDropSize: 1
     - _RainForce: 1
     - _ScanLineJitter: 0.25
     - _ScreenAspect: 1.6667
-    - _ShiftSpeed: 1
+    - _ShiftSpeed: 1.65
     - _TimeScale: 14.1
-    - _VerticalJump: 1
-    - _VignetteIntensity: 0.262
-    - _VignetteSmoothness: 1
+    - _VerticalJump: 0.05
+    - _VignetteIntensity: 0.144
+    - _VignetteSmoothness: 0.5
     - _X: 1
     - _Y: 0
     m_Colors:
     - _Color1: {r: 1, g: 0, b: 0, a: 1}
     - _Color2: {r: 0, g: 1, b: 0, a: 1}
     - _Color3: {r: 0, g: 0, b: 1, a: 1}
-    - _ManualShift: {r: 0.2, g: -0.2, b: 0.5, a: 0.01}
+    - _ManualShift: {r: 0.2, g: -0.2, b: 0.74, a: 0.01}
     - _RadialBlurCenter: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _VignetteCenter: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _VignetteColor: {r: 0, g: 0, b: 0, a: 0}

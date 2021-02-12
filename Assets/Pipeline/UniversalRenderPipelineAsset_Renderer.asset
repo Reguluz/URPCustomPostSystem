@@ -113,16 +113,16 @@ MonoBehaviour:
     VignetteEnable: 0
     VignetteColor: {r: 0, g: 0, b: 0, a: 0}
     VigenetteCenter: {x: 0.5, y: 0.5}
-    VignetteIntensity: 0
+    VignetteIntensity: 0.144
     VignetteSmoothness: 0.5
-    GlitchEnable: 0
+    GlitchEnable: 1
     ScanLineJitter: 0.25
-    VerticleJump: 1
+    VerticleJump: 0.05
     HorizontalShake: 0.1
     RGBShiftAmp: 0
-    ManualShift: {x: 0.2, y: -0.2, z: 0.5, w: 0.01}
-    ShiftSpeed: 1
-    Lighten: 0.01
+    ManualShift: {x: 0.2, y: -0.2, z: 0.74, w: 0.01}
+    ShiftSpeed: 1.65
+    Lighten: 1
     Color1: {r: 1, g: 0, b: 0, a: 1}
     Color2: {r: 0, g: 1, b: 0, a: 1}
     Color3: {r: 0, g: 0, b: 1, a: 1}
@@ -130,7 +130,7 @@ MonoBehaviour:
     X: 1
     Y: 0
     SaturateEnable: 1
-    SaturateStr: 0
+    SaturateStr: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0

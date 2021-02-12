@@ -4,7 +4,7 @@ Shader"Unlit/URPStencil"
     {
         _MainTex ("Texture", 2D) = "white" {}
         _Ref("Ref", Int) = 1
-        _Id("ID", Color) = (1,1,1,1)
+        _Id("ID", Int) = 1
     }
     SubShader
     {
@@ -87,10 +87,10 @@ Shader"Unlit/URPStencil"
                o.vertex = TransformObjectToHClip(v.vertex);
                return o;
             }
-            float4 _Id;
+            float _Id;
             half4 fragID (v2f i) : SV_Target
             {
-               return _Id;
+               return _Id/65535;
             }
             ENDHLSL
         }

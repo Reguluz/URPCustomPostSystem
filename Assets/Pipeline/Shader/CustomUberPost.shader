@@ -728,14 +728,14 @@
                 half2 bs = float2((shift.z - offset.b) * _X, (-shift.x + offset.b) * _Y) ;
 
             #ifdef USE_ID_TEXTURE
-                half idmask = SAMPLE_TEXTURE2D(normalRT, samplernormalRT, shiftuv).w;
-            	uint id = idmask * 65536 % 4 == 0;
-            	half maskshiftR = SAMPLE_TEXTURE2D(normalRT, samplernormalRT, shiftuv + rs).w;
-            	uint mR = maskshiftR * 65536 % 4 == 0;
-            	half maskshiftG = SAMPLE_TEXTURE2D(normalRT, samplernormalRT, shiftuv + gs).w;
-            	uint mG = maskshiftG * 65536 % 4 == 0;
-            	half maskshiftB = SAMPLE_TEXTURE2D(normalRT, samplernormalRT, shiftuv + bs).w;
-            	uint mB = maskshiftB * 65536 % 4 == 0;
+                float idmask = SAMPLE_TEXTURE2D(_IDMask, sampler_IDMask, i.uv);
+            	float id = idmask * 65536 % 4 == 0;
+            	half maskshiftR = SAMPLE_TEXTURE2D(_IDMask, sampler_IDMask, shiftuv + rs);
+            	float mR = maskshiftR * 65536 % 4 == 0;
+            	half maskshiftG = SAMPLE_TEXTURE2D(_IDMask, sampler_IDMask, shiftuv + gs);
+            	float mG = maskshiftG * 65536 % 4 == 0;
+            	half maskshiftB = SAMPLE_TEXTURE2D(_IDMask, sampler_IDMask, shiftuv + bs);
+            	float mB = maskshiftB * 65536 % 4 == 0;
             	half r = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, shiftuv + rs).x * mR;
                 half g = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, shiftuv + gs).y * mG;
                 half b = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, shiftuv + bs).z * mB;
@@ -756,7 +756,7 @@
             	// return finalID;
 				col = lerp(src, col, finalID);
             #endif
-            	return src;
+            	return col;
             }
             ENDHLSL
         }
@@ -845,9 +845,8 @@
                 half4 col = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.uv);
             #ifdef USE_ID_TEXTURE
                 float idmask = SAMPLE_TEXTURE2D(_IDMask, sampler_IDMask, i.uv);
-            	// return idmask;
-            	// uint id = idmask * 65536;
-            	// id = id % 2;
+            	float id = idmask * 65536;
+            	id = id % 2;
 				return lerp(col, Luminance(col) * idmask + col * (1 - idmask), _PostCustomSaturate);
             #endif
                 return lerp(col, Luminance(col), _PostCustomSaturate);

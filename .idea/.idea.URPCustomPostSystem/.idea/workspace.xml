@@ -20,28 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd5b2fcf-d550-4019-9161-c8ed214bad5b" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.URPCustomPostSystem/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.URPCustomPostSystem/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.URPCustomPostSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.URPCustomPostSystem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CustomUberPost.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CustomUberPost.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CustomUberPostFeature.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CustomUberPostFeature.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CustomUberPostPass.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CustomUberPostPass.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CustomUberPostSetter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CustomUberPostSetter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIUtilities.hlsl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIUtilities.hlsl.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UberPost.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UberPost.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset_Renderer.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset_Renderer.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pipeline/Shader/CustomUberPost.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pipeline/Shader/CustomUberPost.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pipeline/Shader/URPStencil.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pipeline/Shader/URPStencil.shader" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,10 +45,10 @@
         <option value="$PROJECT_DIR$/Assets/Pipeline/Script/GrabStencil.cs" />
         <option value="$PROJECT_DIR$/Assets/Pipeline/Shader/URPIDMask.shader" />
         <option value="$PROJECT_DIR$/Assets/Pipeline/Shader/IDMask.hlsl" />
-        <option value="$PROJECT_DIR$/Assets/Pipeline/Shader/URPStencil.shader" />
         <option value="$PROJECT_DIR$/Assets/Pipeline/RenderFeature/UberPost/CustomUberPostPass.cs" />
         <option value="$PROJECT_DIR$/Assets/Pipeline/RenderFeature/GrabStencil/GrabStencilFeature.cs" />
         <option value="$PROJECT_DIR$/Assets/Pipeline/RenderFeature/GrabStencil/GrabStencilPass.cs" />
+        <option value="$PROJECT_DIR$/Assets/Pipeline/Shader/URPStencil.shader" />
         <option value="$PROJECT_DIR$/Assets/Pipeline/Shader/CustomUberPost.shader" />
       </list>
     </option>
@@ -125,7 +106,7 @@
       <workItem from="1612795545812" duration="5983000" />
       <workItem from="1612953212631" duration="609000" />
       <workItem from="1613021373436" duration="4714000" />
-      <workItem from="1613105955642" duration="6990000" />
+      <workItem from="1613105955642" duration="8710000" />
     </task>
     <servers />
   </component>
