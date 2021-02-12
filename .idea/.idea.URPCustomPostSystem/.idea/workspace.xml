@@ -1,10 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="dd5b2fcf-d550-4019-9161-c8ed214bad5b" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.URPCustomPostSystem/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.URPCustomPostSystem/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.URPCustomPostSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.URPCustomPostSystem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CustomUberPost.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CustomUberPost.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CustomUberPostFeature.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CustomUberPostFeature.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CustomUberPostPass.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CustomUberPostPass.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CustomUberPostSetter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CustomUberPostSetter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UIUtilities.hlsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UIUtilities.hlsl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UberPost.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UberPost.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset_Renderer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset_Renderer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
@@ -16,10 +51,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Pipeline/RenderFeature/GrabStencil/GrabStencilPass.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Pipeline/Script/GrabStencil.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/CustomUberPost.shader" />
+        <option value="$PROJECT_DIR$/Assets/Editor/HeaderCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Pipeline/Shader/URPUnlit.shader" />
+        <option value="$PROJECT_DIR$/Assets/Pipeline/Script/GrabStencil.cs" />
+        <option value="$PROJECT_DIR$/Assets/Pipeline/Shader/URPIDMask.shader" />
+        <option value="$PROJECT_DIR$/Assets/Pipeline/Shader/IDMask.hlsl" />
+        <option value="$PROJECT_DIR$/Assets/Pipeline/Shader/URPStencil.shader" />
+        <option value="$PROJECT_DIR$/Assets/Pipeline/RenderFeature/UberPost/CustomUberPostPass.cs" />
+        <option value="$PROJECT_DIR$/Assets/Pipeline/RenderFeature/GrabStencil/GrabStencilFeature.cs" />
+        <option value="$PROJECT_DIR$/Assets/Pipeline/RenderFeature/GrabStencil/GrabStencilPass.cs" />
+        <option value="$PROJECT_DIR$/Assets/Pipeline/Shader/CustomUberPost.shader" />
       </list>
     </option>
   </component>
@@ -32,6 +81,12 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -65,12 +120,43 @@
       <option name="presentableId" value="Default" />
       <updated>1612520503964</updated>
       <workItem from="1612520505382" duration="40000" />
+      <workItem from="1612707025537" duration="1259000" />
+      <workItem from="1612771443750" duration="602000" />
+      <workItem from="1612795545812" duration="5983000" />
+      <workItem from="1612953212631" duration="609000" />
+      <workItem from="1613021373436" duration="4714000" />
+      <workItem from="1613105955642" duration="6990000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="960" y="415" key="RiderGenerateDialog" timestamp="1613023053428">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="960" y="415" key="RiderGenerateDialog/0.0.2560.1400/2560.0.2490.1440@0.0.2560.1400" timestamp="1613023053428" />
+    <state x="929" y="432" width="701" height="536" key="find.popup" timestamp="1613112553495">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="929" y="432" width="701" height="536" key="find.popup/0.0.2560.1400/2560.0.2490.1440@0.0.2560.1400" timestamp="1613112553495" />
   </component>
 </project>

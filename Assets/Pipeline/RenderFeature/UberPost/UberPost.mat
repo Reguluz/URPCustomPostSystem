@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: UberPost
   m_Shader: {fileID: 4800000, guid: fffc74bc14aaf3845ad524e0ec3069b1, type: 3}
-  m_ShaderKeywords: USE_ID_TEXTURE USE_POLARUV _X_ON
+  m_ShaderKeywords: USE_ID_TEXTURE USE_POLARUV
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -77,7 +77,7 @@ Material:
     - _NormalStr: 0.38
     - _Offset: 2.76
     - _PolarUV: 0
-    - _PostCustomSaturate: 0.318
+    - _PostCustomSaturate: 0
     - _RGBShiftAmp: 0
     - _RadialBlurMaskStr: 1
     - _RadialBlurOffsetStr: 0.1

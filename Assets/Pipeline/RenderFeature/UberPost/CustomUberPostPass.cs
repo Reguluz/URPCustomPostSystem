@@ -25,7 +25,7 @@ public class CustomUberPostPass : ScriptableRenderPass
     private static readonly int STATIC_Next1 = Shader.PropertyToID("_Next1");
     private static readonly int STATIC_Next2 = Shader.PropertyToID("_Next2");
     private static readonly int STATIC_ScreenAspect = Shader.PropertyToID("_ScreenAspect");
-    private static readonly int STATIC_IdMask = Shader.PropertyToID("_IDTexture");
+    private static readonly int STATIC_IdMask = Shader.PropertyToID("_IDMask");
     
     /***** Overlay *****/
     private static readonly int STATIC_OverlayPass = 9;

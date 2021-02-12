@@ -1,4 +1,4 @@
-﻿Shader "Yostar/CustomUberPost"
+﻿Shader "14/CustomUberPost"
 {
     Properties
     {
@@ -82,13 +82,15 @@
 		Texture2D _CustomDepthTexture;
 		SamplerState sampler_CustomDepthTexture;
 
-		Texture2D normalRT;
-		SamplerState samplernormalRT;
+		// Texture2D _IDMask;
+		// SamplerState sampler_IDMask;
 
 	
 	#ifdef USE_ID_TEXTURE
-        uniform Texture2D _IdMaskTex;
-        uniform SamplerState sampler_IdMaskTex;
+		Texture2D _IDMask;
+		SamplerState sampler_IDMask;
+        // uniform Texture2D _IdMaskTex;
+        // uniform SamplerState sampler_IdMaskTex;
 	#endif
 		/*DOF*/
 		Texture2D _DOFSource;
@@ -536,7 +538,7 @@
 				rainUV.y += i.uv.y * 0.001;
 				//让uv随摄像机视角维持世界空间垂直
 				rainUV.x += pow(i.uv.y + (_CameraForward.y + 0.5), _CameraForward.y + 1.15) * (rainUV.x - 0.5) * _CameraForward.y;
-				half rainMask = SAMPLE_TEXTURE2D(_Rain, sampler_Rain, i.uv + half2(0, _Time.y*20%1));
+				half rainMask = SAMPLE_TEXTURE2D(_Rain, sampler_Rain, i.uv + half2(0, _Time.y*20));
 				half3 rain = SAMPLE_TEXTURE2D(_NoiseTex, sampler_NoiseTex, rainUV) * rainMask;
 				// col.rgb += ripple * (1 - i.uv.y) * 0.8 * _RainForce * 2;
 				col.rgb += saturate(rain.r - rain.g * (1 - _RainForce * 0.5) - rain.b * (1 - _RainForce * 0.5)) * 0.15 * (i.uv.y) * _RainForce * 2;
@@ -842,10 +844,11 @@
             {
                 half4 col = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.uv);
             #ifdef USE_ID_TEXTURE
-                float idmask = SAMPLE_TEXTURE2D(normalRT, samplernormalRT, i.uv).w;
-            	uint id = idmask * 65536;
-            	id = id % 2;
-				return lerp(col, Luminance(col) * id + col * (1 - id), _PostCustomSaturate);
+                float idmask = SAMPLE_TEXTURE2D(_IDMask, sampler_IDMask, i.uv);
+            	// return idmask;
+            	// uint id = idmask * 65536;
+            	// id = id % 2;
+				return lerp(col, Luminance(col) * idmask + col * (1 - idmask), _PostCustomSaturate);
             #endif
                 return lerp(col, Luminance(col), _PostCustomSaturate);
                 
