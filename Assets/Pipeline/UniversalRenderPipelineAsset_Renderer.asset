@@ -87,13 +87,13 @@ MonoBehaviour:
     GradientOffset: 0
     OverlayCoordiate: {x: 1, y: 5, z: -1, w: 0.1}
     NormalCoordiate: {x: 1, y: 1, z: 0, w: 0}
-    EyeMaskEnable: 0
-    Handle: 0.5
-    Gradient: 0.5
-    RadialBlurEnable: 0
+    EyeMaskEnable: 1
+    Handle: 0.621
+    Gradient: 0.263
+    RadialBlurEnable: 1
     RadialBlurCenter: {x: 0.5, y: 0.5}
-    RadialBlurMaskStr: 1
-    RadialBlurSampleTime: 3
+    RadialBlurMaskStr: 2
+    RadialBlurSampleTime: 10
     RadialBlurOffsetStr: 0.1
     DualKawaseDOFEnable: 0
     BlurRadius: 2.76
@@ -101,32 +101,32 @@ MonoBehaviour:
     RTDownScaling: 0
     FocusLength: 50
     DOFRadius: 25
-    RainDropEnable: 0
+    RainDropEnable: 1
     RainForce: 1
-    RainDropSize: 1
-    RainDropAngle: 0
-    DropAspect: 2
-    DropSpeed: 0.2
-    DropMotionTurb: 1
-    Distortion: 1
-    Blur: 0.5
-    VignetteEnable: 0
+    RainDropSize: 10
+    RainDropAngle: 36
+    DropAspect: 3.81
+    DropSpeed: 1.74
+    DropMotionTurb: 3.13
+    Distortion: 1.66
+    Blur: 0.447
+    VignetteEnable: 1
     VignetteColor: {r: 0, g: 0, b: 0, a: 0}
     VigenetteCenter: {x: 0.5, y: 0.5}
-    VignetteIntensity: 0.144
-    VignetteSmoothness: 0.5
+    VignetteIntensity: 0.382
+    VignetteSmoothness: 0.123
     GlitchEnable: 1
     ScanLineJitter: 0.25
-    VerticleJump: 0.05
-    HorizontalShake: 0.1
+    VerticleJump: 0
+    HorizontalShake: 0.02
     RGBShiftAmp: 0
     ManualShift: {x: 0.2, y: -0.2, z: 0.74, w: 0.01}
-    ShiftSpeed: 1.65
+    ShiftSpeed: 0.79
     Lighten: 1
     Color1: {r: 1, g: 0, b: 0, a: 1}
     Color2: {r: 0, g: 1, b: 0, a: 1}
     Color3: {r: 0, g: 0, b: 1, a: 1}
-    Balance: 0.5
+    Balance: 0.638
     X: 1
     Y: 0
     SaturateEnable: 1

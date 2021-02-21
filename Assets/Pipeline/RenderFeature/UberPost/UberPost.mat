@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GradientTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 52de227834c546b4a8ddcf98e4a8454d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -32,7 +32,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NoiseTex:
-        m_Texture: {fileID: 2800000, guid: 5a6595bb68566014abfbcd58cb6dcbcf, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7cddf2fbe858098498972068031e5fdf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
@@ -44,15 +44,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Rain:
-        m_Texture: {fileID: 2800000, guid: c9c4c9b39e6a40f49b796462e34d875d, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: af5b3278aec9b45439c685088ac9ce95, type: 3}
+        m_Scale: {x: 10, y: 10}
         m_Offset: {x: 0, y: 0}
     - _RainDropTex:
         m_Texture: {fileID: 2800000, guid: 7cddf2fbe858098498972068031e5fdf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Ripple:
-        m_Texture: {fileID: 2800000, guid: 53123e64092b50844ab75b22e24876f2, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7cddf2fbe858098498972068031e5fdf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SideTex:
@@ -60,18 +60,18 @@ Material:
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: -5, y: 0}
     m_Floats:
-    - _Balance: 0.5
-    - _Blur: 0.5
+    - _Balance: 0.638
+    - _Blur: 0.447
     - _DOFRadius: 25
-    - _Distortion: 1
-    - _DropAspect: 2
-    - _DropMotionTurb: 1
-    - _DropSpeed: 0.2
+    - _Distortion: 1.66
+    - _DropAspect: 3.81
+    - _DropMotionTurb: 3.13
+    - _DropSpeed: 1.74
     - _FocusLength: 50
-    - _Gradient: 0.5
+    - _Gradient: 0.263
     - _GradingOffset: 0
-    - _Handle: 0.5
-    - _HorizontalShake: 0.1
+    - _Handle: 0.621
+    - _HorizontalShake: 0.02
     - _IDTexture: 1
     - _Lighten: 1
     - _NormalStr: 0.38
@@ -79,19 +79,19 @@ Material:
     - _PolarUV: 0
     - _PostCustomSaturate: 1
     - _RGBShiftAmp: 0
-    - _RadialBlurMaskStr: 1
+    - _RadialBlurMaskStr: 2
     - _RadialBlurOffsetStr: 0.1
-    - _RadialBlurSampleTime: 3
-    - _RainDropAngle: 0
-    - _RainDropSize: 1
+    - _RadialBlurSampleTime: 10
+    - _RainDropAngle: 36
+    - _RainDropSize: 10
     - _RainForce: 1
     - _ScanLineJitter: 0.25
     - _ScreenAspect: 1.6667
-    - _ShiftSpeed: 1.65
+    - _ShiftSpeed: 0.79
     - _TimeScale: 14.1
-    - _VerticalJump: 0.05
-    - _VignetteIntensity: 0.144
-    - _VignetteSmoothness: 0.5
+    - _VerticalJump: 0
+    - _VignetteIntensity: 0.382
+    - _VignetteSmoothness: 0.123
     - _X: 1
     - _Y: 0
     m_Colors:

@@ -27,165 +27,165 @@ public class CustomUberPostSetterIns : Editor
     public override void OnInspectorGUI()
     {
         
-        _targetScript.OverlayEnable =
-            EditorGUILayout.Toggle("Overlay Enable", _targetScript.OverlayEnable);
-        _targetScript.EyeMaskEnable =
-            EditorGUILayout.Toggle("Eye Mask Enable", _targetScript.EyeMaskEnable);
-        _targetScript.RadialBlurEnable =
-            EditorGUILayout.Toggle("Radial Blur Enable", _targetScript.RadialBlurEnable);
-        _targetScript.DualKawaseDOFEnable =
-            EditorGUILayout.Toggle("DOF Enable", _targetScript.DualKawaseDOFEnable);
-        _targetScript.RainDropEnable =
-            EditorGUILayout.Toggle("Rain Drop Enable", _targetScript.RainDropEnable);
-        _targetScript.VignetteEnable =
-            EditorGUILayout.Toggle("Vignette Enable", _targetScript.VignetteEnable);
-        _targetScript.GlitchEnable =
-            EditorGUILayout.Toggle("Glitch Enable", _targetScript.GlitchEnable);
-        _targetScript.SaturateEnable =
-            EditorGUILayout.Toggle("Saturate Enable", _targetScript.SaturateEnable);
+        _targetScript.Overlay =
+            EditorGUILayout.Toggle("Overlay Enable", _targetScript.Overlay);
+        _targetScript.EyeMask =
+            EditorGUILayout.Toggle("Eye Mask Enable", _targetScript.EyeMask);
+        _targetScript.RadialBlur =
+            EditorGUILayout.Toggle("Radial Blur Enable", _targetScript.RadialBlur);
+        _targetScript.DualKawaseDOF =
+            EditorGUILayout.Toggle("DOF Enable", _targetScript.DualKawaseDOF);
+        _targetScript.RainDrop =
+            EditorGUILayout.Toggle("Rain Drop Enable", _targetScript.RainDrop);
+        _targetScript.Vignette =
+            EditorGUILayout.Toggle("Vignette Enable", _targetScript.Vignette);
+        _targetScript.Glitch =
+            EditorGUILayout.Toggle("Glitch Enable", _targetScript.Glitch);
+        _targetScript.Saturate =
+            EditorGUILayout.Toggle("Saturate Enable", _targetScript.Saturate);
 
-        if (_targetScript.OverlayEnable)
+        if (_targetScript.Overlay)
         {
             EditorGUILayout.Space(5);
             EditorGUILayout.LabelField("Overlay", title);
-            _targetScript.settings.OverlayEnable = EditorGUILayout.Toggle("Overlay Enable", _targetScript.settings.OverlayEnable);
+            _targetScript.OverlayEnable = EditorGUILayout.Toggle("Overlay Enable", _targetScript.OverlayEnable);
             _targetScript.OverlayTexReplace = EditorGUILayout.ObjectField("OverlayTexReplace", _targetScript.OverlayTexReplace, typeof(Texture), false) as Texture2D;
             _targetScript.NormalTexReplace = EditorGUILayout.ObjectField("NormalTexReplace", _targetScript.NormalTexReplace, typeof(Texture), false) as Texture2D;
-            _targetScript.settings.PolarUV = EditorGUILayout.Toggle("PolarUV", _targetScript.settings.PolarUV);
-            _targetScript.settings.NormalStr =
-                EditorGUILayout.Slider("NormalStr", _targetScript.settings.NormalStr,0,3);
-            _targetScript.settings.GradientOffset =
-                EditorGUILayout.FloatField("GradientOffset", _targetScript.settings.GradientOffset);
-            _targetScript.settings.OverlayCoordiate =
-                EditorGUILayout.Vector4Field("OverlayCoordiate", _targetScript.settings.OverlayCoordiate);
-            _targetScript.settings.NormalCoordiate =
-                EditorGUILayout.Vector4Field("NormalCoordiate", _targetScript.settings.NormalCoordiate);
+            _targetScript.PolarUV = EditorGUILayout.Toggle("PolarUV", _targetScript.PolarUV);
+            _targetScript.NormalStr =
+                EditorGUILayout.Slider("NormalStr", _targetScript.NormalStr,0,3);
+            _targetScript.GradientOffset =
+                EditorGUILayout.FloatField("GradientOffset", _targetScript.GradientOffset);
+            _targetScript.OverlayCoordiate =
+                EditorGUILayout.Vector4Field("OverlayCoordiate", _targetScript.OverlayCoordiate);
+            _targetScript.NormalCoordiate =
+                EditorGUILayout.Vector4Field("NormalCoordiate", _targetScript.NormalCoordiate);
         }
 
-        if (_targetScript.EyeMaskEnable)
+        if (_targetScript.EyeMask)
         {
             EditorGUILayout.Space(5);
             EditorGUILayout.LabelField("EyeMask", title);
-            _targetScript.settings.EyeMaskEnable =
-                EditorGUILayout.Toggle("EyeMask Enable", _targetScript.settings.EyeMaskEnable);
-            _targetScript.settings.Handle = EditorGUILayout.Slider("Handle", _targetScript.settings.Handle, 0, 1);
-            _targetScript.settings.Gradient =
-                EditorGUILayout.Slider("Gradient", _targetScript.settings.Gradient, .01f, .99f);
+            _targetScript.EyeMaskEnable =
+                EditorGUILayout.Toggle("EyeMask Enable", _targetScript.EyeMaskEnable);
+            _targetScript.Handle = EditorGUILayout.Slider("Handle", _targetScript.Handle, 0, 1);
+            _targetScript.Gradient =
+                EditorGUILayout.Slider("Gradient", _targetScript.Gradient, .01f, .99f);
         }
 
-        if (_targetScript.RadialBlurEnable)
+        if (_targetScript.RadialBlur)
         {
             EditorGUILayout.Space(5);
             EditorGUILayout.LabelField("RadialBlur", title);
-            _targetScript.settings.RadialBlurEnable =
-                EditorGUILayout.Toggle("RadialBlur Enable", _targetScript.settings.RadialBlurEnable);
-            _targetScript.settings.RadialBlurCenter =
-                EditorGUILayout.Vector2Field("RadialBlur Center", _targetScript.settings.RadialBlurCenter);
-            _targetScript.settings.RadialBlurMaskStr = EditorGUILayout.Slider("RadialBlur Mask Str",
-                _targetScript.settings.RadialBlurMaskStr, 0, 2);
-            _targetScript.settings.RadialBlurSampleTime = EditorGUILayout.IntSlider("RadialBlur Sample Time",
-                _targetScript.settings.RadialBlurSampleTime, 1, 10);
-            _targetScript.settings.RadialBlurOffsetStr = EditorGUILayout.Slider("RadialBlur Offset Str",
-                _targetScript.settings.RadialBlurOffsetStr, 0, 0.5f);
+            _targetScript.RadialBlurEnable =
+                EditorGUILayout.Toggle("RadialBlur Enable", _targetScript.RadialBlurEnable);
+            _targetScript.RadialBlurCenter =
+                EditorGUILayout.Vector2Field("RadialBlur Center", _targetScript.RadialBlurCenter);
+            _targetScript.RadialBlurMaskStr = EditorGUILayout.Slider("RadialBlur Mask Str",
+                _targetScript.RadialBlurMaskStr, 0, 2);
+            _targetScript.RadialBlurSampleTime = EditorGUILayout.IntSlider("RadialBlur Sample Time",
+                _targetScript.RadialBlurSampleTime, 1, 10);
+            _targetScript.RadialBlurOffsetStr = EditorGUILayout.Slider("RadialBlur Offset Str",
+                _targetScript.RadialBlurOffsetStr, 0, 0.5f);
         }
 
-        if (_targetScript.DualKawaseDOFEnable)
+        if (_targetScript.DualKawaseDOF)
         {
             EditorGUILayout.Space(5);
             EditorGUILayout.LabelField("DOF", title);
-            _targetScript.settings.DualKawaseDOFEnable =
-                EditorGUILayout.Toggle("DOF Enable", _targetScript.settings.DualKawaseDOFEnable);
-            _targetScript.settings.BlurRadius = EditorGUILayout.Slider("DOF Blur Radius",
-                _targetScript.settings.BlurRadius, 0.01f, 10);
-            _targetScript.settings.Iteration = EditorGUILayout.IntSlider("DOF Iteration",
-                _targetScript.settings.Iteration, 1, 10);
-            _targetScript.settings.RTDownScaling = EditorGUILayout.IntSlider("DOF DownScaling",
-                _targetScript.settings.RTDownScaling, 0, 4);
-            _targetScript.settings.FocusLength = Mathf.Max(0, EditorGUILayout.FloatField("Focus Length",
-                _targetScript.settings.FocusLength));
-            _targetScript.settings.DOFRadius =  Mathf.Max(0, EditorGUILayout.FloatField("DOF Radius",
-                _targetScript.settings.DOFRadius));
+            _targetScript.DualKawaseDOFEnable =
+                EditorGUILayout.Toggle("DOF Enable", _targetScript.DualKawaseDOFEnable);
+            _targetScript.BlurRadius = EditorGUILayout.Slider("DOF Blur Radius",
+                _targetScript.BlurRadius, 0.01f, 10);
+            _targetScript.Iteration = EditorGUILayout.IntSlider("DOF Iteration",
+                _targetScript.Iteration, 1, 10);
+            _targetScript.RTDownScaling = EditorGUILayout.IntSlider("DOF DownScaling",
+                _targetScript.RTDownScaling, 0, 4);
+            _targetScript.FocusLength = Mathf.Max(0, EditorGUILayout.FloatField("Focus Length",
+                _targetScript.FocusLength));
+            _targetScript.DOFRadius =  Mathf.Max(0, EditorGUILayout.FloatField("DOF Radius",
+                _targetScript.DOFRadius));
         }
 
-        if (_targetScript.RainDropEnable)
+        if (_targetScript.RainDrop)
         {
             EditorGUILayout.Space(5);
             EditorGUILayout.LabelField("RainDrop", title);
-            _targetScript.settings.RainDropEnable =
-                EditorGUILayout.Toggle("RainDrop Enable", _targetScript.settings.RainDropEnable);
-            _targetScript.settings.RainForce =
-                EditorGUILayout.Slider("RainForce", _targetScript.settings.RainForce, 0, 1);
-            _targetScript.settings.RainDropSize =
-                EditorGUILayout.Slider("Rain Drop Size", _targetScript.settings.RainDropSize, 0, 10);
-            _targetScript.settings.RainDropAngle =
-                EditorGUILayout.Slider("Rain Drop Angle", _targetScript.settings.RainDropAngle, -90, 90);
-            _targetScript.settings.DropAspect =
-                Mathf.Max(0,EditorGUILayout.FloatField("Drop Aspect", _targetScript.settings.DropAspect));
-            _targetScript.settings.DropSpeed =
-                EditorGUILayout.Slider("Rain Drop Size", _targetScript.settings.DropSpeed, 0, 5);
-            _targetScript.settings.DropMotionTurb =
-                EditorGUILayout.Slider("Rain Drop Size", _targetScript.settings.DropMotionTurb, 0, 5);
-            _targetScript.settings.Distortion =
-                EditorGUILayout.Slider("Rain Drop Size", _targetScript.settings.Distortion, 0, 10);
-            _targetScript.settings.Blur =
-                EditorGUILayout.Slider("Rain Drop Size", _targetScript.settings.Blur, 0, 1);
+            _targetScript.RainDropEnable =
+                EditorGUILayout.Toggle("RainDrop Enable", _targetScript.RainDropEnable);
+            _targetScript.RainForce =
+                EditorGUILayout.Slider("RainForce", _targetScript.RainForce, 0, 1);
+            _targetScript.RainDropSize =
+                EditorGUILayout.Slider("Rain Drop Size", _targetScript.RainDropSize, 0, 10);
+            _targetScript.RainDropAngle =
+                EditorGUILayout.Slider("Rain Drop Angle", _targetScript.RainDropAngle, -90, 90);
+            _targetScript.DropAspect =
+                Mathf.Max(0,EditorGUILayout.FloatField("Drop Aspect", _targetScript.DropAspect));
+            _targetScript.DropSpeed =
+                EditorGUILayout.Slider("Rain Drop Size", _targetScript.DropSpeed, 0, 5);
+            _targetScript.DropMotionTurb =
+                EditorGUILayout.Slider("Rain Drop Size", _targetScript.DropMotionTurb, 0, 5);
+            _targetScript.Distortion =
+                EditorGUILayout.Slider("Rain Drop Size", _targetScript.Distortion, 0, 10);
+            _targetScript.Blur =
+                EditorGUILayout.Slider("Rain Drop Size", _targetScript.Blur, 0, 1);
         }
 
-        if (_targetScript.VignetteEnable)
+        if (_targetScript.Vignette)
         {
             EditorGUILayout.Space(5);
             EditorGUILayout.LabelField("Vignette", title);
-            _targetScript.settings.VignetteEnable =
-                EditorGUILayout.Toggle("Vignette Enable", _targetScript.settings.VignetteEnable);
-            _targetScript.settings.VignetteColor =
-                EditorGUILayout.ColorField("Vignette Color", _targetScript.settings.VignetteColor);
-            _targetScript.settings.VigenetteCenter =
-                EditorGUILayout.Vector2Field("Vignette Center", _targetScript.settings.VigenetteCenter);
-            _targetScript.settings.VignetteIntensity =
-                EditorGUILayout.Slider("Vignette Intensity", _targetScript.settings.VignetteIntensity, 0, 1);
-            _targetScript.settings.VignetteSmoothness = EditorGUILayout.Slider("Vignette Smoothness",
-                _targetScript.settings.VignetteSmoothness, 0.001f, 1);
+            _targetScript.VignetteEnable =
+                EditorGUILayout.Toggle("Vignette Enable", _targetScript.VignetteEnable);
+            _targetScript.VignetteColor =
+                EditorGUILayout.ColorField("Vignette Color", _targetScript.VignetteColor);
+            _targetScript.VigenetteCenter =
+                EditorGUILayout.Vector2Field("Vignette Center", _targetScript.VigenetteCenter);
+            _targetScript.VignetteIntensity =
+                EditorGUILayout.Slider("Vignette Intensity", _targetScript.VignetteIntensity, 0, 1);
+            _targetScript.VignetteSmoothness = EditorGUILayout.Slider("Vignette Smoothness",
+                _targetScript.VignetteSmoothness, 0.001f, 1);
         }
 
-        if (_targetScript.GlitchEnable)
+        if (_targetScript.Glitch)
         {
             EditorGUILayout.Space(5);
             EditorGUILayout.LabelField("Glitch", title);
-            _targetScript.settings.GlitchEnable =
-                EditorGUILayout.Toggle("Glitch Enable", _targetScript.settings.GlitchEnable);
-            _targetScript.settings.ScanLineJitter =
-                EditorGUILayout.FloatField("Scanline Jitter", _targetScript.settings.ScanLineJitter);
-            _targetScript.settings.VerticleJump =
-                EditorGUILayout.FloatField("Verticle Jump", _targetScript.settings.VerticleJump);
-            _targetScript.settings.HorizontalShake =
-                EditorGUILayout.FloatField("Horizontal Shake", _targetScript.settings.HorizontalShake);
-            _targetScript.settings.RGBShiftAmp =
-                EditorGUILayout.FloatField("RGB Shift Amp", _targetScript.settings.RGBShiftAmp);
-            _targetScript.settings.ManualShift =
-                EditorGUILayout.Vector4Field("Manual Shift", _targetScript.settings.ManualShift);
-            _targetScript.settings.ShiftSpeed =
-                EditorGUILayout.Slider("Shift Speed", _targetScript.settings.ShiftSpeed, .01f, 10);
-            _targetScript.settings.Lighten = EditorGUILayout.FloatField("Lighten", _targetScript.settings.Lighten);
-            _targetScript.settings.Color1 = EditorGUILayout.ColorField(new GUIContent("Color1"),
-                _targetScript.settings.Color1, true, false, true);
-            _targetScript.settings.Color2 = EditorGUILayout.ColorField(new GUIContent("Color2"),
-                _targetScript.settings.Color2, true, false, true);
-            _targetScript.settings.Color3 = EditorGUILayout.ColorField(new GUIContent("Color3"),
-                _targetScript.settings.Color3, true, false, true);
-            _targetScript.settings.Balance =
-                EditorGUILayout.Slider("Balance", _targetScript.settings.Balance, 0, 1);
-            _targetScript.settings.X = EditorGUILayout.Toggle("X", _targetScript.settings.X);
-            _targetScript.settings.Y = EditorGUILayout.Toggle("Y", _targetScript.settings.Y);
+            _targetScript.GlitchEnable =
+                EditorGUILayout.Toggle("Glitch Enable", _targetScript.GlitchEnable);
+            _targetScript.ScanLineJitter =
+                EditorGUILayout.FloatField("Scanline Jitter", _targetScript.ScanLineJitter);
+            _targetScript.VerticleJump =
+                EditorGUILayout.FloatField("Verticle Jump", _targetScript.VerticleJump);
+            _targetScript.HorizontalShake =
+                EditorGUILayout.FloatField("Horizontal Shake", _targetScript.HorizontalShake);
+            _targetScript.RGBShiftAmp =
+                EditorGUILayout.FloatField("RGB Shift Amp", _targetScript.RGBShiftAmp);
+            _targetScript.ManualShift =
+                EditorGUILayout.Vector4Field("Manual Shift", _targetScript.ManualShift);
+            _targetScript.ShiftSpeed =
+                EditorGUILayout.Slider("Shift Speed", _targetScript.ShiftSpeed, .01f, 10);
+            _targetScript.Lighten = EditorGUILayout.FloatField("Lighten", _targetScript.Lighten);
+            _targetScript.Color1 = EditorGUILayout.ColorField(new GUIContent("Color1"),
+                _targetScript.Color1, true, false, true);
+            _targetScript.Color2 = EditorGUILayout.ColorField(new GUIContent("Color2"),
+                _targetScript.Color2, true, false, true);
+            _targetScript.Color3 = EditorGUILayout.ColorField(new GUIContent("Color3"),
+                _targetScript.Color3, true, false, true);
+            _targetScript.Balance =
+                EditorGUILayout.Slider("Balance", _targetScript.Balance, 0, 1);
+            _targetScript.X = EditorGUILayout.Toggle("X", _targetScript.X);
+            _targetScript.Y = EditorGUILayout.Toggle("Y", _targetScript.Y);
         }
 
-        if (_targetScript.SaturateEnable)
+        if (_targetScript.Saturate)
         {
             EditorGUILayout.Space(5);
             EditorGUILayout.LabelField("Saturate", title);
-            _targetScript.settings.SaturateEnable =
-                EditorGUILayout.Toggle("Saturate Enable", _targetScript.settings.SaturateEnable);
-            _targetScript.settings.SaturateStr =
-                EditorGUILayout.Slider("Saturate Str", _targetScript.settings.SaturateStr, 0, 1);
+            _targetScript.SaturateEnable =
+                EditorGUILayout.Toggle("Saturate Enable", _targetScript.SaturateEnable);
+            _targetScript.SaturateStr =
+                EditorGUILayout.Slider("Saturate Str", _targetScript.SaturateStr, 0, 1);
         }
         
     }

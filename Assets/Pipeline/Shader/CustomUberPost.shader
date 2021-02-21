@@ -634,9 +634,9 @@
                 _Handle = _Handle / (1-_Gradient);
                 half threshold = -0.5 * _Handle * pow(i.uv.x - 0.5, 2) + 1.125 * _Handle;
                 half gray = 1- saturate((i.uv.y+ _Gradient - threshold)/_Gradient) ;
-                half4 filled = SAMPLE_TEXTURE2D(_GradientTex, sampler_GradientTex, half2(1-gray, 1));
-                return filled * col;
-                return lerp(col, filled , (1-gray) * (1-gray));//i.uv.y <threshold ?col : 0;
+                half4 filled = SAMPLE_TEXTURE2D(_GradientTex, sampler_GradientTex, half2(1, 1-gray));
+                // return filled;
+                return lerp(col, filled , /*sqrt*/(1-gray) /** (1-gray)*/);//i.uv.y <threshold ?col : 0;
             }
             ENDHLSL
         }
@@ -700,7 +700,14 @@
                 float v = i.uv.y;
             
                 float ScaledTime = _Time.x * _ShiftSpeed;
-                
+            	
+                half threshold = -0.5 * _Handle * pow(i.uv.x - 0.5, 2) + 1.125 * _Handle;
+                half gray = 1- saturate((i.uv.y+ _Gradient - threshold)/_Gradient) ;
+            	gray = 1- gray;
+            	gray = gray * gray;
+            	// return gray;
+            	// gray = 1-gray;
+            	
                 // Scan line jitter
                 float jitter = nrand(v, ScaledTime) * 2 - 1;
                 half2 ScanLineJitterD = float2(0.002f + pow(_ScanLineJitter, 3) * 0.05f, saturate(1.0f - _ScanLineJitter * 1.2f));
@@ -712,10 +719,10 @@
                 // Horizontal shake
                 half shake = (nrand(ScaledTime, 2) - 0.5) * _HorizontalShake * 0.2f;
         
+            	
                 // Color drift
                 //float drift = sin(jump + _Time * 606.11) * _ColorDrift.x * 0.04;
-                
-                float2 shiftuv = frac(float2(u + jitter + shake, jump));
+                float2 shiftuv = frac(float2(u + (jitter + shake) , jump));
                 //rgbshift
                 half3 noise = SAMPLE_TEXTURE2D(_AnalogNoise, sampler_AnalogNoise, float2(ScaledTime, ScaledTime * 0.08)).xyz;
             	half depth = LinearEyeDepth(SAMPLE_TEXTURE2D(_CustomDepthTexture, sampler_CustomDepthTexture, i.uv).r, _ZBufferParams);
@@ -749,10 +756,12 @@
             	
                 half4 src = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.uv);
                 half4 src1 = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, shiftuv);
+
+
+            	// gray = 1-gray;
                 half4 col = lerp(src1 , half4(rgbShift,1) , _Balance);
-            	
             #ifdef USE_ID_TEXTURE
-                float finalID = lerp(id * 1.0, (mR * 1.0 + mG * 1.0 + mB * 1.0) * _Lighten, _Balance);
+                float finalID = lerp(id * 1.0, (mR * 1.0 + mG * 1.0 + mB * 1.0) * _Lighten, _Balance );
             	// return finalID;
 				col = lerp(src, col, finalID);
             #endif

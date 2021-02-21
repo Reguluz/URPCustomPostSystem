@@ -58,3 +58,7 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+*.png
+Assets/KB3D/
+Assets/SciFi_Industrial_LevelKit_2.0/
+Assets/Starfield Skybox/
